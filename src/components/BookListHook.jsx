@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SingleBook from "./SingleBook";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import CommentArea from "./CommentArea";
+import CommentAreaHook from "./CommentArea";
 
 const BookListHook = ({ books }) => {
   // state = {
@@ -46,7 +46,7 @@ const BookListHook = ({ books }) => {
           </Row>
         </Col>
         <Col md={4}>
-          <CommentArea asin={selectedBook} />
+          <CommentAreaHook asin={selectedBook} />
         </Col>
       </Row>
     </Container>
